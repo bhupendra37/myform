@@ -48,8 +48,8 @@ class App extends Component {
 	
 	}
 	valid(){  
-           if(!this.state.first_name.match(/^[a-zA-Z ]*$/) || this.state.first_name=="" 
-           	&&!this.state.last_name.match(/^[a-zA-Z ]*$/) ||this.state.last_name==""
+           if((!this.state.first_name.match(/^[a-zA-Z ]*$/) || this.state.first_name=="" )
+           	&&(!this.state.last_name.match(/^[a-zA-Z ]*$/) ||this.state.last_name=="")
            	&&!this.state.phone.match(/^[0-9]{10}$/))
 
           {
